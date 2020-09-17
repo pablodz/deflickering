@@ -2,6 +2,8 @@
 
 ## Automatic deflickering + Colab + Docker 
 
+DEFLICKERING 0.041=24 fps or 0.033 29.97 fps `https://video.stackexchange.com/a/23749`
+
 ```
 docker run jrottenberg/ffmpeg  -fflags +genpts -i input.mp4 -fflags \
                 +genpts -i input.mp4 -filter_complex "[0:v]setpts=PTS-STARTPTS[top]; \
